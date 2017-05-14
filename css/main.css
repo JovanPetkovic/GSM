@@ -1,0 +1,186 @@
+.positioner {
+  width: 1100px;
+  margin: auto;
+  background-color: white;
+  height: 100%; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #efefef;
+  width: 100%;
+  height: 100%; }
+
+header {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  header ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0; }
+    header ul li {
+      padding: 0 20px;
+      text-transform: uppercase;
+      font-size: 110%; }
+      header ul li a {
+        text-decoration: none;
+        color: #4f4f4f; }
+        header ul li a:hover {
+          color: black; }
+  header #menu {
+    background-color: white;
+    border: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-size: 110%;
+    text-decoration: none;
+    color: black;
+    outline: none; }
+
+.vesti {
+  display: flex;
+  height: 400px; }
+  .vesti #slider {
+    width: 1100px;
+    background-color: blue;
+    height: 100%;
+    overflow: hidden; }
+    .vesti #slider .slides {
+      display: block;
+      width: 5500px;
+      height: 100%;
+      margin: 0;
+      padding: 0; }
+      .vesti #slider .slides .slide {
+        float: left;
+        list-style-type: none;
+        height: 100%;
+        width: 1100px; }
+      .vesti #slider .slides .slide1 {
+        background-color: red; }
+      .vesti #slider .slides .slide2 {
+        background-color: blue; }
+      .vesti #slider .slides .slide3 {
+        background-color: green; }
+      .vesti #slider .slides .slide4 {
+        background-color: purple; }
+      .vesti #slider .slides h2 {
+        color: white;
+        padding-left: 10px;
+        vertical-align: bottom; }
+
+.links {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .links .link {
+    width: 250px;
+    text-align: center; }
+    .links .link img {
+      height: 100px;
+      width: 100px; }
+    .links .link h3 {
+      color: #474747;
+      padding-top: 10px; }
+    .links .link p {
+      color: #3d3d3d;
+      line-height: 130%; }
+    .links .link a {
+      text-decoration: none;
+      color: blue; }
+
+.nnb {
+  display: flex;
+  margin-top: 0;
+  height: 300px;
+  flex-direction: row;
+  text-align: center; }
+  .nnb img {
+    max-width: 70%; }
+  .nnb .nnbinfo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #3B393A;
+    margin: 0 0 0 5px; }
+    .nnb .nnbinfo p {
+      flex: 1;
+      line-height: 130%;
+      color: #FE4FF6;
+      padding-left: 15px;
+      padding-right: 15px; }
+    .nnb .nnbinfo a {
+      color: white;
+      text-decoration: none; }
+
+footer .aboutus h3 {
+  margin: 0; }
+
+.menuslide {
+  margin-left: -1500px;
+  position: absolute;
+  width: 1100px;
+  background-color: white; }
+  .menuslide .menunav {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px grey solid; }
+    .menuslide .menunav .options {
+      display: flex;
+      align-items: center; }
+      .menuslide .menunav .options .search {
+        display: flex;
+        border: 1px solid #878787;
+        margin: 10px;
+        border-radius: 2px; }
+        .menuslide .menunav .options .search input {
+          padding: 0;
+          width: 300px;
+          height: 30px;
+          border: none;
+          margin: 0 5px;
+          font-size: 140%;
+          font-family: "Source Sans Pro", sans-serif; }
+          .menuslide .menunav .options .search input:focus {
+            outline: none; }
+        .menuslide .menunav .options .search #searchbutton {
+          height: 30px;
+          width: 30px;
+          margin: 0; }
+          .menuslide .menunav .options .search #searchbutton img {
+            padding: 0;
+            margin: 0;
+            height: 30px;
+            width: 30px; }
+      .menuslide .menunav .options a {
+        margin-right: 10px;
+        color: black;
+        text-decoration: none; }
+    .menuslide .menunav button {
+      background-color: white;
+      border: none;
+      outline: none; }
+      .menuslide .menunav button img {
+        height: 60px; }
+  .menuslide .menucontent {
+    display: flex;
+    flex-wrap: wrap; }
+    .menuslide .menucontent .menulist {
+      list-style-type: none;
+      margin-right: 40px; }
+      .menuslide .menucontent .menulist a {
+        font-family: "Source Sans Pro", sans-serif;
+        text-decoration: none;
+        color: #333333;
+        line-height: 180%;
+        font-size: 115%; }
+        .menuslide .menucontent .menulist a:hover {
+          color: black; }
+
+/*# sourceMappingURL=main.css.map */
