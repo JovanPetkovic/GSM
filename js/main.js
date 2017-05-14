@@ -57,31 +57,6 @@ $(function() {
 
 	menu.init();
 
-	var textlist = {
-		cacheDom: function() {
-			this.$textlist = $('.tekstovi');
-			this.$li = this.$textlist.find('li');
-			console.log(this.$textlist);
-		},
-
-		switchText: function(numOfText,speed){
-			var num = (numOfText+1)%this.$li.length;
-			if(!num)
-				num=this.$li.length;
-			var $text1 = this.$textlist.find('.text'+numOfText);
-			var $text2 = this.$textlist.find('.text'+num);
-
-			$text1.fadeOut(speed, function(){
-				$text1.addClass('hidden');
-				$text2.fadeIn(speed, function(){
-					$text2.removeClass('hidden');
-				})
-			});
-		}
-	}
-
-	textlist.cacheDom();
-
 	function startSlider() {
 		interval = setInterval(function(){
 			$slideContainer.animate({'margin-left': '-='+width}
@@ -91,7 +66,14 @@ $(function() {
 						$slideContainer.css('margin-left', 0);
 					}
 				});
-			textlist.switchText(currentSlide,animationSpeed/2);
+			var nextSlide= (currentSlide + 1)%4;
+			if (!nextSlide){
+				nextSlide=4;
+			}
+			$slider.find('#slide' + currentSlide).fadeOut(animationSpeed/2,function(){
+				$slider.find('#slide' + nextSlide).fadeIn(animationSpeed/2);
+			});
+			
 		}, pause);
 	}
 	
