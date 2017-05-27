@@ -31,7 +31,7 @@ header {
         text-decoration: none;
         color: #4f4f4f; }
         header ul li a:hover {
-          color: black; }
+          color: #333333; }
   header #menu {
     background-color: white;
     border: none;
@@ -39,7 +39,7 @@ header {
     text-transform: uppercase;
     font-size: 110%;
     text-decoration: none;
-    color: black;
+    color: #333333;
     outline: none; }
 
 .vesti {
@@ -105,7 +105,8 @@ header {
   margin-top: 0;
   height: 300px;
   flex-direction: row;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 5px; }
   .nnb img {
     max-width: 70%; }
   .nnb .nnbinfo {
@@ -124,13 +125,51 @@ header {
       color: white;
       text-decoration: none; }
 
-footer .aboutus h3 {
-  margin: 0; }
+footer {
+  background-color: #f7f7f7;
+  color: #3d3d3d;
+  padding-top: 5px;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif; }
+  footer p, footer li {
+    line-height: 160%;
+    width: 300px;
+    font-size: 80%; }
+  footer h3 {
+    margin: 0; }
+  footer .aboutus {
+    margin: 0 200px 0 10px; }
+  footer .footernav {
+    width: 300px; }
+    footer .footernav ul {
+      margin-top: 10px;
+      padding: 0;
+      list-style-type: none; }
+      footer .footernav ul a {
+        text-decoration: none;
+        color: #333333; }
+        footer .footernav ul a:hover {
+          color: black;
+          text-decoration: underline; }
+      footer .footernav ul li {
+        padding-bottom: 4px;
+        border-bottom: 1px solid #d1d1d1; }
+
+.copyright {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ededed;
+  color: #333333; }
+  .copyright p {
+    font-size: 90%;
+    margin: 0 10px;
+    padding: 10px; }
 
 .menuslide {
   margin-left: -1500px;
   position: absolute;
   width: 1100px;
+  height: 100%;
   background-color: white; }
   .menuslide .menunav {
     width: 1100px;
@@ -167,7 +206,7 @@ footer .aboutus h3 {
             width: 30px; }
       .menuslide .menunav .options a {
         margin-right: 10px;
-        color: black;
+        color: #333333;
         text-decoration: none; }
     .menuslide .menunav button {
       background-color: white;
@@ -188,4 +227,4 @@ footer .aboutus h3 {
         line-height: 180%;
         font-size: 115%; }
         .menuslide .menucontent .menulist a:hover {
-          color: black; }
+          color: #333333; }
