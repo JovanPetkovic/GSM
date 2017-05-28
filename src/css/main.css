@@ -1,3 +1,6 @@
+a {
+  text-decoration: none; }
+
 .hidden {
   display: none; }
 
@@ -99,6 +102,8 @@ header {
     .links .link a {
       text-decoration: none;
       color: blue; }
+      .links .link a:hover {
+        text-decoration: underline; }
 
 .nnb {
   display: flex;
@@ -124,6 +129,8 @@ header {
     .nnb .nnbinfo a {
       color: white;
       text-decoration: none; }
+      .nnb .nnbinfo a:hover {
+        text-decoration: underline; }
 
 footer {
   background-color: #f7f7f7;
@@ -137,6 +144,8 @@ footer {
     font-size: 80%; }
   footer h3 {
     margin: 0; }
+  footer a:hover {
+    text-decoration: underline; }
   footer .aboutus {
     margin: 0 200px 0 10px; }
   footer .footernav {
@@ -171,6 +180,8 @@ footer {
   width: 1100px;
   height: 100%;
   background-color: white; }
+  .menuslide a:hover {
+    color: black; }
   .menuslide .menunav {
     width: 1100px;
     display: flex;
@@ -208,6 +219,9 @@ footer {
         margin-right: 10px;
         color: #333333;
         text-decoration: none; }
+        .menuslide .menunav .options a:hover {
+          text-decoration: underline;
+          color: black; }
     .menuslide .menunav button {
       background-color: white;
       border: none;
@@ -227,4 +241,5 @@ footer {
         line-height: 180%;
         font-size: 115%; }
         .menuslide .menucontent .menulist a:hover {
-          color: #333333; }
+          color: black;
+          text-decoration: underline; }
